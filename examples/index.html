@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Examples</title>
+<SCRIPT>var isomorphicDir="sc/";</SCRIPT> 
+<SCRIPT SRC=sc/system/modules/ISC_Core.js></SCRIPT> 
+<SCRIPT SRC=sc/system/modules/ISC_Foundation.js></SCRIPT> 
+<SCRIPT SRC=sc/system/modules/ISC_Containers.js></SCRIPT> 
+<SCRIPT SRC=sc/system/modules/ISC_Grids.js></SCRIPT> 
+<SCRIPT SRC=sc/system/modules/ISC_Forms.js></SCRIPT> 
+<SCRIPT SRC=sc/system/modules/ISC_DataBinding.js></SCRIPT> 
+<SCRIPT SRC=sc/skins/Enterprise/load_skin.js></SCRIPT>
+<SCRIPT SRC=sc/system/modules/RPCManager.js></SCRIPT> 
+
+<SCRIPT SRC=../src/PagingGrid.js></SCRIPT>
+<SCRIPT SRC=../src/WizardBase.js></SCRIPT>
+
+
+<SCRIPT SRC=js/wizard.js></SCRIPT>
+
+</head>
+<body>
+<div>
+<script>
+var btn1 = isc.Button.create({
+	//width: "100%",
+	//height: "100%",
+	autoDraw: true,
+	title: "Show Wizard...",
+	
+	click: function() {
+		isc.QM_DlgExampleWizard.create({
+    		width: "800px",
+    		height: "500px",
+    		autoCenter: true,
+    		showMinimizeButton: false,
+    		isModal: true,
+    		showModalMask: true
+    	});
+	}
+});
+</script>
+</div>
+<br><br>
+<div>
+<script>
+/*
+isc.QM_PagingGrid.create({
+    	    width: "800",
+    	    height: "300",
+    	    minFieldWidth:80,
+			autoDraw: true,
+    	    fields:[
+    	            {name:"nodePort", title:"Flag", width:60, imageURLPrefix:"flags/16/", imageURLSuffix:".png"},
+    	            {name:"nodeName", title:"Host Name/IP", width:200 },
+    	            {name:"userName", title:"User Name", width:222, autoFitWidth:true },
+    	        ],
+});
+*/
+</script>
+<div>
+</body>
+</html>
