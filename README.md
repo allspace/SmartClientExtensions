@@ -1,6 +1,6 @@
 # SmartClientExtentions
 
-Extention List:
+Extention List: <br>
 PagingGrid: as an alternative to out-of-box LiveGrid <br>
 WizardBase: can be used as base class of your wizard
 
